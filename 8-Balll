@@ -1,0 +1,71 @@
+#include <iostream>
+#include <cstdlib>
+
+int main() {
+  std::cout << "MAGIC 8-BALL: \n\n";
+  srand(time(NULL));
+  int ball = std::rand() % 10;
+  std::cout << ball;
+  switch (ball) {
+    case 0:
+      std::cout << "\nIt is certain.";
+      break;
+    case 1:
+      std::cout << "\nIt is decidedly so.";
+      break;
+    case 2:
+      std::cout << "\nWithout a doubt.";
+      break;
+    case 3:
+      std::cout << "\nYes - definitely.";
+      break;
+    case 4:
+      std::cout << "\nYou may rely on it.";
+      break;
+    case 5:
+      std::cout << "\nAs I see it, yes.";
+      break;
+    case 6:
+      std::cout << "\nMost likely.";
+      break;
+    case 7:
+      std::cout << "\nOutlook good.";
+      break;
+    case 8:
+      std::cout << "\nYes.";
+      break;
+    case 9:
+      std::cout << "\nVery Doubtful.";
+      break;
+    case 10:
+      std::cout << "\nSigns point to yes.";
+      break;
+    case 11:
+      std::cout << "\nReply hazy, try again.";
+      break;
+    case 12:
+      std::cout << "\nAsk again later.";
+      break;
+    case 13:
+      std::cout << "\nBetter not tell you now.";
+      break;
+    case 14:
+      std::cout << "\nCannot predict now.";
+      break;
+    case 15:
+      std::cout << "\nConcentrate and not ask again.";
+      break;
+    case 16:
+      std::cout << "\nDon't count on it.";
+      break;
+    case 17:
+      std::cout << "\nMy reply is no.";
+      break;
+    case 18:
+      std::cout << "\nMy sources say no.";
+      break;
+    default:
+      std::cout << "\nOutlook not so good.";
+      break;
+  }
+}
